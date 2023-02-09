@@ -6,7 +6,7 @@
 #    By: lbonnefo <lbonnefo@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/27 13:56:33 by lbonnefo          #+#    #+#              #
-#    Updated: 2023/01/27 14:07:05 by lbonnefo         ###   ########.fr        #
+#    Updated: 2023/02/09 14:48:46 by lbonnefo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRCS= $(addprefix lbonnefo/, $(FILES))
 
 OBJ = $(SRCS:.c=.o)
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -D BUFFER_SIZE=1
 
 $(NAME): $(OBJ)
 		ar -rc $(NAME) $(OBJ)
