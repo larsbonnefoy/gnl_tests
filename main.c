@@ -17,10 +17,10 @@
 
 int main(int argc, char **arc)
 {
-	int fd1 = open("bibli.txt", O_RDONLY);
+	int fd1 = open("bash.txt", O_RDONLY);
 	//int fd2 = open("sw.txt", O_RDONLY);
 	//int fd3 = open("empty.txt", O_RDONLY);
-	int line_to_read = 1000;
+	int line_to_read = 10;
 	int i = 0;
 	char *line;
 
